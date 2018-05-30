@@ -110,6 +110,8 @@ inline bool operator< (const StrongVector<T,Alloc>& x, const StrongVector<T,Allo
 | n = 10000000 | 0.0467975 s. | 0.0584776 s. |
 | n = 100000000 | 0.429985 s. | 0.546494 s. |
 
+---
+
 |Duomenu kiekis                    |StrongVector     |std::vector     |
 |----------------------------------|-----------------|----------------|
 | n = 10000 | 0.00130823 s. | 0.00010027 s. |
