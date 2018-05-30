@@ -1,4 +1,4 @@
-```markdown
+
 # Coolest implementations
 ## Augustinas Makevičius
 
