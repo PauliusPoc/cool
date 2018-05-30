@@ -179,9 +179,6 @@ else()
 endif(START_GTEST)
 unset(START_GTEST CACHE)
 ```
----
-
-![Jokes](segs.jpg)
 
 
 
