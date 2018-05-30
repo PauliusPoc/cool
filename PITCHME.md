@@ -35,6 +35,47 @@ double Studentas::vidurkis(){
 
 ### 4 užduotis
 ![Jokes](image61.png)
-  
+
+---
+```c++
+void assign(std::initializer_list<T> ilist){
+        alokatorius.deallocate(elem, sz);
+        elem = alokatorius.allocate(ilist.size());
+        std::copy(ilist.begin(),ilist.end(),elem);
+        sz = ilist.size();
+        cap = ilist.size();
+}
+template< class... Args > 
+iterator emplace( size_type posID, Args&&... args ) {
+        if (sz == cap) {
+            if (cap == 0) cap = 1;
+            else cap *= 2;
+            T *new_elem = alokatorius.allocate(cap);
+            std::move(elem, elem + posID, new_elem);
+            alokatorius.construct(new_elem + posID, std::forward<Args>(args)...);
+            std::move(elem + posID, elem + sz, new_elem + posID + 1);
+            alokatorius.deallocate(elem, sz);
+            elem = new_elem;
+        } else {
+            std::move(elem + posID, elem + sz, elem + posID + 1);
+            alokatorius.construct(elem + posID, std::forward<Args>(args)...);
+        }
+        sz++;
+        return &elem[posID];
+}
+```
+
+---
+
+![Jokes](image4.png)
+
+---
+    
+
+
+
+
+
+
 
 
