@@ -33,6 +33,8 @@ double Studentas::vidurkis(){
 ```
 ---
 
+### 4 užduotis
+![Jokes](image61.png)
   
 
 
